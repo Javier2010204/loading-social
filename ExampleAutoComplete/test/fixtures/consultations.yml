@@ -1,0 +1,23 @@
+# == Schema Information
+#
+# Table name: consultations
+#
+#  id         :integer          not null, primary key
+#  name       :string
+#  date       :date
+#  patient_id :integer
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  date: 2018-07-23
+  patient_id: 1
+
+two:
+  name: MyString
+  date: 2018-07-23
+  patient_id: 1

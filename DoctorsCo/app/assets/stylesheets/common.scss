@@ -1,0 +1,27 @@
+html, body{
+	margin: 0;
+	padding: 0;
+}
+.full-height{
+	height: 100%;
+}
+.full-width{
+	width: 100%;
+}
+
+.underline{
+	text-decoration: underline;
+}
+
+/* Margins */
+.top-space{
+	margin-top: 1em;
+}
+.no-margin{
+	margin: 0;
+}
+
+/*Fonts*/
+.bigger{
+	font-size: 5em;
+}

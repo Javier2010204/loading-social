@@ -1,0 +1,19 @@
+.row.center-xs.middle-xs
+    .col-xs-12.col-sm-6
+        .box
+            %h1 Listado de consultas
+            %p
+                =link_to 'Agregar nueva', new_consultation_path(), class: 'mdl-button mdl-js-button mdl-button--raised mdl-button--colored', id: 'click'
+    .col-xs-12.col-sm-3
+        .box
+            #consultas
+                -@consultations.each do |consultation|
+                    .consultation
+                        .mdl-card.mdl-shadow--2dp.white
+                            .mdl-card__title
+                                .mdl-card__tittle-text
+                                    =link_to consultation.name, consultation
+                            .detalle
+                                -if consultation.patient
+                                    | Paciente:
+                                    =consultation.patient.name

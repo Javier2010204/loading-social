@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  specialty: MyString
+  puntuation: 1
+  services: MyText
+  bio: MyText
+  hour: MyString
+  tax: 9.99
+
+two:
+  specialty: MyString
+  puntuation: 1
+  services: MyText
+  bio: MyText
+  hour: MyString
+  tax: 9.99

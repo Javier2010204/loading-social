@@ -1,0 +1,12 @@
+.full-height.middle-xs.center-xs.row.full-width.dc-background
+	.col-xs-12
+		.box.white-text
+			%h1.logo.bigger.no-margin.underline DoctorsCo.net
+			%p Busca un doctor por nombre, especialidad o una zona cercana a ti
+			.top-space
+				=form_tag "/search/create", method: :get do
+					.mdl-textfield.mdl-js-textfield 
+						=text_field_tag :keyword,nil, placeholder: "Busca tu medico aqui...", class: ''
+					=content_tag :button, type: :submit, class: 'mdl-button mdl-js-button mdl-button-fab mdl-button--raised mdl-button--colored' do 
+						Buscar
+					  

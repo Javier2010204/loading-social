@@ -1,0 +1,22 @@
+$colors:(
+	white: #fff,
+	black: #000,
+	dark-red: #B71C1C,
+	red: #E53935,
+	light-red: #FF5252,
+	dark-blue: #0D47A1,
+	blue: #1E88E5,
+	light-blue: #03A9F4,
+	dark-teal: #00695C,
+	teal: #009688,
+	light-teal: #80CBC4
+);
+
+@each $color_name, $color in $colors{
+	.#{$color_name}{
+		background-color: $color;
+	}
+	.#{$color_name}-text{
+		color: $color !important;
+	}
+}

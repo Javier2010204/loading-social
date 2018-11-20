@@ -1,0 +1,12 @@
+= form_for(@consultation)  do |f|
+    .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+        = f.text_field :name, class: 'mdl-textfield__input'
+        =f.label 'nombre', class: 'mdl-textfield__label'
+    .field
+        =f.label 'fecha'
+        =f.date_select :date
+    .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+        =f.text_field :patient_name, class: 'mdl-textfield__input', data:{ autocomplete_source: patients_path}
+        =f.label 'paciente', class: 'mdl-textfield__label'
+    .actions
+        =f.submit 'Guardar', class: 'mdl-button mdl-js-button mdl-button--raised mdl-button--colored'

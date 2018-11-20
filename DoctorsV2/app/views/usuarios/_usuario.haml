@@ -1,0 +1,12 @@
+- @usuarios.each do |usuario|
+    .col-xs-12.margin-top
+        .box.large-padding.blue.white-text.mdl-shadow--2dp
+            %p.big-font.logo-font= usuario.name
+        .box.large-padding.white.mdl-shadow--2dp
+            %p= usuario.address
+            %p= usuario.email
+            %p= usuario.phone
+            %p= usuario.bio
+            =link_to 'Seleccionar', new_appointment_url(user_id: usuario.id), class: 'mdl-button mdl-js-button mdl-button--raised mdl-button--accent'
+
+            

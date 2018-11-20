@@ -1,0 +1,10 @@
+.row.center-xs.middle-xs
+    %h1.logo-font.bigger-font DoctorsCo
+.row.center-xs
+    =form_tag "search/create", method: :get, remote: true, id: "seach-form" do
+        .mdl-textfield.mdl-js-textfield 
+            =text_field_tag :keyword, nil,class: 'mdl-textfield__input', id: 'medicos-form'
+            =label_tag nil, "Busca un profesional de la salud por su nombre, especialidad o la zona mas cercana a ti", class: 'mdl-textfield__label'
+        =content_tag :button, type: :submit, class: 'mdl-button mdl-js-button mdl-button--raised mdl-button--colored' do
+            Buscar
+.row.cente-xs.middle-xs#resultados
