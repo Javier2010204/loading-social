@@ -9,7 +9,8 @@ $colors:(
 	light-blue: #03A9F4,
 	dark-teal: #00695C,
 	teal: #009688,
-	light-teal: #80CBC4
+	light-teal: #80CBC4,
+	grey: #c1d5e0
 );
 
 @each $color_name, $color in $colors{
