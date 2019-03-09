@@ -1,21 +1,19 @@
-%p#notice= notice
-
-%p
-  %b Nombre:
-  = @participant.nombre
-%p
-  %b Ocupacion:
-  = @participant.ocupacion
-%p
-  %b Interes:
-  = @participant.interes
-%p
-  %b Correo:
-  = @participant.correo
-%p
-  %b Telefono:
-  = @participant.telefono
-
-= link_to 'Edit', edit_participant_path(@participant)
-\|
-= link_to 'Back', participants_path
+.row
+  .col-xs-12.col-sm-10
+    .box
+      .big-padding.white.mdl-shadow--2dp
+        %p
+          %b Nombre:
+          = @participant.nombre
+        %p
+          %b Ocupacion:
+          = @participant.ocupacion
+        %p
+          %b Interes:
+          = @participant.interes
+        %p
+          %b Correo:
+          = @participant.correo
+        %p
+          %b Telefono:
+          = @participant.telefono       
