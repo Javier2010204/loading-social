@@ -1,5 +1,5 @@
 .top-space
-	= form_for @participant do |f|
+	= form_for @participant, remote: true, id: "emails-form" do |f|
 		-if @participant.errors.any?
 			#error_explanation
 				%h2= "#{pluralize(@participant.errors.count, "error")} prohibited this participant from being saved:"
